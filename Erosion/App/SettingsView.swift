@@ -25,6 +25,7 @@ struct SettingsView: View {
                 Section {
                     Link(destination: URL(string: "https://github.com/ceoca69/erosion-mod")!) {
                         AppInfoCell(build: "Release", appName: "Erosion mod", appVersion: "0.1")
+                            .foregroundStyle(.primary)
                     }
                 } header: {
                     HeaderLabel("About", symbol: "info.circle")
@@ -33,6 +34,8 @@ struct SettingsView: View {
                         Text("Made with love by the [jailbreak.party](https://jailbreak.party) team.\nNeed support or want to know about new releases? Join the [jailbreak.party Discord server!](https://jailbreak.party/discord)")
                         Link(destination: URL(string: "https://t.me/springb0ard")!) {
                             Text("Modified by @springb0ard")
+                                .font(.body)
+                                .foregroundStyle(.secondary)
                         }
                     }
                 }
